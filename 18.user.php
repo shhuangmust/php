@@ -14,7 +14,7 @@
                 <table border=1>
                     <tr><td></td><td>帳號</td><td>密碼</td></tr>";
             
-            $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
+            $conn=mysqli_connect("120.105.96.90", "immust", "immustimmust", "immust");
             $result=mysqli_query($conn, "select * from user");
             while ($row=mysqli_fetch_array($result)){
                 echo "<tr><td><a href=19.user_edit_form.php?id={$row['id']}>修改</a>||<a href=17.user_delete.php?id={$row['id']}>刪除</a></td><td>{$row['id']}</td><td>{$row['pwd']}</td></tr>";
