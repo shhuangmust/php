@@ -9,7 +9,7 @@
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{   
-        $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
+        $conn=mysqli_connect("120.105.96.90", "immust", "immustimmust", "immust");
         $result=mysqli_query($conn, "select * from user where id='{$_GET['id']}'");
         $row=mysqli_fetch_array($result);
         echo "
