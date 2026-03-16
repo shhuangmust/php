@@ -7,7 +7,7 @@
     }
     else{
         
-        $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
+        $conn=mysqli_connect("120.105.96.90", "immust", "immustimmust", "immust");
         $result=mysqli_query($conn, "select * from bulletin where bid={$_GET["bid"]}");
         $row=mysqli_fetch_array($result);
         $checked1="";
