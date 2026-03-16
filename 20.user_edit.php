@@ -7,7 +7,7 @@
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{   
-        $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
+        $conn=mysqli_connect("120.105.96.90", "immust", "immustimmust", "immust");
         if (!mysqli_query($conn, "update user set pwd='{$_POST['pwd']}' where id='{$_POST['id']}'")){
             echo "修改錯誤";
             echo "<meta http-equiv=REFRESH content='3, url=18.user.php'>";
