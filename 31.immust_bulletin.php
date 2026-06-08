@@ -281,7 +281,7 @@
         <div class="bulletin">
            <h1>最新公告</h1>
             <?php
-                $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
+                $conn=mysqli_connect("120.105.96.90", "immust", "immustimmust", "immust");
                 $result=mysqli_query($conn, "select * from bulletin");
                 echo "<table border=2><tr><th>佈告編號</th><th>佈告類別</th><th>標題</th><th>佈告內容</th><th>發佈時間</th></tr>";
                 while ($row=mysqli_fetch_array($result)){
